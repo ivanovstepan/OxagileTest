@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FistTest" duration-ms="72550" started-at="2016-02-11T11:47:11Z" finished-at="2016-02-11T11:48:23Z">
+  <suite name="FistTest" duration-ms="78534" started-at="2016-02-11T16:11:22Z" finished-at="2016-02-11T16:12:41Z">
     <groups>
     </groups>
-    <test name="Don&#039;t know" duration-ms="72550" started-at="2016-02-11T11:47:11Z" finished-at="2016-02-11T11:48:23Z">
+    <test name="Don&#039;t know" duration-ms="78534" started-at="2016-02-11T16:11:22Z" finished-at="2016-02-11T16:12:41Z">
       <class name="Tests">
-        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@4e04a765]" name="startBrowser" is-config="true" duration-ms="29899" started-at="2016-02-11T13:47:11Z" finished-at="2016-02-11T13:47:41Z">
+        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@180bc464]" name="startBrowser" is-config="true" duration-ms="12392" started-at="2016-02-11T18:11:22Z" finished-at="2016-02-11T18:11:35Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="test_technology()[pri:0, instance:Tests@4e04a765]" name="test_technology" duration-ms="41117" started-at="2016-02-11T13:47:41Z" finished-at="2016-02-11T13:48:22Z">
+        <test-method status="PASS" signature="test_technology()[pri:0, instance:Tests@180bc464]" name="test_technology" duration-ms="64875" started-at="2016-02-11T18:11:35Z" finished-at="2016-02-11T18:12:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_technology -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@4e04a765]" name="stopBrowser" is-config="true" duration-ms="1502" started-at="2016-02-11T13:48:22Z" finished-at="2016-02-11T13:48:23Z">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@180bc464]" name="stopBrowser" is-config="true" duration-ms="1235" started-at="2016-02-11T18:12:40Z" finished-at="2016-02-11T18:12:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
