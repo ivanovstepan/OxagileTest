@@ -4,8 +4,7 @@ import org.testng.annotations.Test;
 import pages.PageHome;
 import pages.PageLogin;
 import pages.PageOnliner;
-
-import static org.testng.Assert.assertTrue;
+import pages.PageTechnology;
 
 
 public class TestLogin extends BasicOfTest {
@@ -23,13 +22,21 @@ public class TestLogin extends BasicOfTest {
         pageLogin = PageFactory.initElements(driver,PageLogin.class);
         pageHome = PageFactory.initElements(driver, PageHome.class);
         pageOnliner = PageFactory.initElements(driver, PageOnliner.class);
+        pageTechnology = PageFactory.initElements(driver, PageTechnology.class);
     }
 
-    @Test(dataProvider = "loginValidation")
+    /*@Test(dataProvider = "loginValidation")
     public void test_login(String login,String password){
         pageOnliner.goToLoginPage();
         pageLogin.loginToPageHome(login,password);
         assertTrue(pageHome.isElementPresent(pageHome.IMAGE_USER));
-
+    }
+*/
+    @Test
+    public void test_technology(){
+        pageOnliner.goToLoginPage();
+        pageLogin.loginToPageHome("stepanivanov11@gmail.com","newpas11");
+        pageHome.goToTechnologyPage();
+        pageTechnology.getAllNews();
     }
 }

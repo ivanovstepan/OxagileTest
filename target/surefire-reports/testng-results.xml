@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FistTest" duration-ms="75659" started-at="2016-02-11T07:59:37Z" finished-at="2016-02-11T08:00:52Z">
+  <suite name="FistTest" duration-ms="153647" started-at="2016-02-11T09:05:19Z" finished-at="2016-02-11T09:07:53Z">
     <groups>
     </groups>
-    <test name="Don&#039;t know" duration-ms="75659" started-at="2016-02-11T07:59:37Z" finished-at="2016-02-11T08:00:52Z">
+    <test name="Don&#039;t know" duration-ms="153647" started-at="2016-02-11T09:05:19Z" finished-at="2016-02-11T09:07:53Z">
       <class name="TestLogin">
-        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:TestLogin@180bc464]" name="startBrowser" is-config="true" duration-ms="10283" started-at="2016-02-11T09:59:37Z" finished-at="2016-02-11T09:59:47Z">
+        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:TestLogin@180bc464]" name="startBrowser" is-config="true" duration-ms="32280" started-at="2016-02-11T11:05:19Z" finished-at="2016-02-11T11:05:51Z">
           <params>
             <param index="0">
               <value>
@@ -18,81 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="test_login(java.lang.String, java.lang.String)[pri:0, instance:TestLogin@180bc464]" name="test_login" duration-ms="21701" started-at="2016-02-11T09:59:47Z" data-provider="loginValidation" finished-at="2016-02-11T10:00:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[stepanivanov11@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[newpas11]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="test_technology()[pri:0, instance:TestLogin@180bc464]" name="test_technology" duration-ms="119912" started-at="2016-02-11T11:05:51Z" finished-at="2016-02-11T11:07:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_login -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:TestLogin@180bc464]" name="stopBrowser" is-config="true" duration-ms="1128" started-at="2016-02-11T10:00:09Z" finished-at="2016-02-11T10:00:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopBrowser -->
-        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:TestLogin@180bc464]" name="startBrowser" is-config="true" duration-ms="27958" started-at="2016-02-11T10:00:10Z" finished-at="2016-02-11T10:00:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="FAIL" signature="test_login(java.lang.String, java.lang.String)[pri:0, instance:TestLogin@180bc464]" name="test_login" duration-ms="13976" started-at="2016-02-11T10:00:38Z" data-provider="loginValidation" finished-at="2016-02-11T10:00:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sadfsad]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[asdf]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at TestLogin.test_login(TestLogin.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_login -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:TestLogin@180bc464]" name="stopBrowser" is-config="true" duration-ms="544" started-at="2016-02-11T10:00:52Z" finished-at="2016-02-11T10:00:52Z">
+        </test-method> <!-- test_technology -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:TestLogin@180bc464]" name="stopBrowser" is-config="true" duration-ms="1398" started-at="2016-02-11T11:07:51Z" finished-at="2016-02-11T11:07:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->

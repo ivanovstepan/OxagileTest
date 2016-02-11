@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 77.103 sec <<< FAILURE! - in TestSuite
-test_login(TestLogin)  Time elapsed: 14 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at TestLogin.test_login(TestLogin.java:32)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 154.773 sec - in TestSuite

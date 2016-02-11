@@ -1,6 +1,7 @@
 pages\BasePage.class
 pages\PageLogin.class
 pages\PageOnliner.class
+pages\PageTechnology.class
 pages\PageHome.class
 BasicOfTest.class
 TestLogin.class

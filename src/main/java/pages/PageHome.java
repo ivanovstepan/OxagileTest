@@ -12,11 +12,16 @@ public class PageHome extends BasePage {
     @FindBy(xpath = IMAGE_USER)
     WebElement image;
 
+    @FindBy(xpath = ".//*[@class='b-main-navigation']/li[4]/a")
+    WebElement goToTechnologyPage;
+
     public PageHome (WebDriver driver){
         super(driver);
 
     }
-
+    public void goToTechnologyPage(){
+        this.goToTechnologyPage.click();
+    }
 
 
 }

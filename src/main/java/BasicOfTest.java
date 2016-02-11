@@ -6,6 +6,7 @@ import org.testng.annotations.Parameters;
 import pages.PageHome;
 import pages.PageLogin;
 import pages.PageOnliner;
+import pages.PageTechnology;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +17,7 @@ public abstract class BasicOfTest {
     public PageLogin pageLogin;
     public PageHome pageHome;
     public PageOnliner pageOnliner;
+    public PageTechnology pageTechnology;
 
     public abstract void initPages();
 
