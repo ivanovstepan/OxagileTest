@@ -1,6 +1,8 @@
 Tests.class
 pages\BasePage.class
+pages\PageNoteBook.class
 pages\PageLogin.class
+pages\Product.class
 pages\PageOnliner.class
 pages\PageTechnology.class
 pages\PageHome.class

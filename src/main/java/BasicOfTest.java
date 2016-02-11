@@ -3,10 +3,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-import pages.PageHome;
-import pages.PageLogin;
-import pages.PageOnliner;
-import pages.PageTechnology;
+import pages.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,6 +15,8 @@ public abstract class BasicOfTest {
     public PageHome pageHome;
     public PageOnliner pageOnliner;
     public PageTechnology pageTechnology;
+    public PageNoteBook pageNoteBook;
+    public Product product;
 
     public abstract void initPages();
 

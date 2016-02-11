@@ -7,9 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Stepan on 11.02.2016.
- */
+
 public class BasePage {
 
     private WebDriver driver;
