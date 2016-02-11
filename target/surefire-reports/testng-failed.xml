@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [FistTest]" parallel="methods">
+  <parameter name="browser" value="firefox"/>
+  <test name="Don&#039;t know">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestLogin"/>
+    </classes>
+  </test> <!-- Don't know -->
+  <test name="Don&#039;t know(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestLogin">
+        <methods>
+          <include name="test_login" invocation-numbers="1"/>
+          <include name="startBrowser"/>
+          <include name="stopBrowser"/>
+        </methods>
+      </class> <!-- TestLogin -->
+    </classes>
+  </test> <!-- Don't know(failed) -->
+</suite> <!-- Failed suite [FistTest] -->

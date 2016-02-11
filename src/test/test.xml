@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <suite name="FistTest" parallel="methods">
+
+            <test name="Don't know">
+                <parameter name="browser" value="firefox"/>
+                <classes>
+                    <class name="TestLogin"/>
+                </classes>
+            </test>
+        </suite>

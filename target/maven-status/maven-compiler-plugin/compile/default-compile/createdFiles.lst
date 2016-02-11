@@ -1,0 +1,6 @@
+pages\BasePage.class
+pages\PageLogin.class
+pages\PageOnliner.class
+pages\PageHome.class
+BasicOfTest.class
+TestLogin.class
