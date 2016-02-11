@@ -7,7 +7,7 @@ import pages.PageOnliner;
 import pages.PageTechnology;
 
 
-public class TestLogin extends BasicOfTest {
+public class Tests extends BasicOfTest {
 
     @DataProvider( name = "loginValidation")
     public Object [][] loginValidation(){
@@ -35,7 +35,7 @@ public class TestLogin extends BasicOfTest {
     @Test
     public void test_technology(){
         pageOnliner.goToLoginPage();
-        pageLogin.loginToPageHome("stepanivanov11@gmail.com","newpas11");
+        pageLogin.loginToPageHome("stepanivanov11@gmail.com", "newpas11");
         pageHome.goToTechnologyPage();
         pageTechnology.getAllNews();
     }

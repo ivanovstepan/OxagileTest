@@ -5,7 +5,7 @@
             <test name="Don't know">
                 <parameter name="browser" value="firefox"/>
                 <classes>
-                    <class name="TestLogin"/>
+                    <class name="Tests"/>
                 </classes>
             </test>
         </suite>
