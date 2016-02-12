@@ -48,8 +48,14 @@ public class Product {
         List<WebElement> list = driver.findElements(By.xpath(".//*[@class='product-specs__table']/tbody[2]/tr[5]/td"));
         System.out.println(list.get(0).getText());
         System.out.println(list.get(1).getText());
-
         return list.get(0).getText().equals(param1) && list.get(1).getText().equals(value1);
+    }
+
+    public boolean checkParameterTwo(){
+        List<WebElement> list = driver.findElements(By.xpath(".//*[@class='product-specs__table']/tbody[6]/tr[2]/td"));
+        System.out.println(list.get(0).getText());
+        System.out.println(list.get(1).getText());
+        return list.get(0).getText().equals(param2) && list.get(1).getText().equals(value2);
     }
 
 

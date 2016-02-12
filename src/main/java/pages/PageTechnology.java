@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-public class PageTechnology {
+public class PageTechnology  extends BasePage{
 
     final String news =".//*[@class='b-posts-1 b-content-posts-1']/article";
     final String nameOfNews = ".//*[@class='b-posts-1-item__title'][1]/a/span[1]";
@@ -20,12 +20,11 @@ public class PageTechnology {
     final String nameAttribute = "datetime";
     private int countPages = 1;
 
-    private WebDriver driver;
     private Writer writer;
 
 
     public PageTechnology(WebDriver driver) throws IOException {
-        this.driver = driver;
+        super(driver);
         writer = new OutputStreamWriter(new FileOutputStream(new File("out1.txt")),"UTF-8");
     }
 

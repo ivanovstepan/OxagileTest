@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="FistTest" duration-ms="66321" started-at="2016-02-11T23:08:07Z" finished-at="2016-02-11T23:09:13Z">
+  <suite name="FistTest" duration-ms="115521" started-at="2016-02-12T21:43:46Z" finished-at="2016-02-12T21:45:42Z">
     <groups>
     </groups>
-    <test name="Don&#039;t know" duration-ms="66321" started-at="2016-02-11T23:08:07Z" finished-at="2016-02-11T23:09:13Z">
+    <test name="Don&#039;t know" duration-ms="115521" started-at="2016-02-12T21:43:46Z" finished-at="2016-02-12T21:45:42Z">
       <class name="Tests">
-        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@180bc464]" name="startBrowser" is-config="true" duration-ms="11687" started-at="2016-02-12T01:08:07Z" finished-at="2016-02-12T01:08:19Z">
+        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@180bc464]" name="startBrowser" is-config="true" duration-ms="34397" started-at="2016-02-12T23:43:46Z" finished-at="2016-02-12T23:44:21Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="serch_notebook()[pri:0, instance:Tests@180bc464]" name="serch_notebook" duration-ms="53248" started-at="2016-02-12T01:08:19Z" finished-at="2016-02-12T01:09:12Z">
+        <test-method status="PASS" signature="serchNotebook()[pri:0, instance:Tests@180bc464]" name="serchNotebook" duration-ms="46057" started-at="2016-02-12T23:44:21Z" finished-at="2016-02-12T23:45:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- serch_notebook -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@180bc464]" name="stopBrowser" is-config="true" duration-ms="1343" started-at="2016-02-12T01:09:12Z" finished-at="2016-02-12T01:09:13Z">
+        </test-method> <!-- serchNotebook -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@180bc464]" name="stopBrowser" is-config="true" duration-ms="1342" started-at="2016-02-12T23:45:07Z" finished-at="2016-02-12T23:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@180bc464]" name="startBrowser" is-config="true" duration-ms="28571" started-at="2016-02-12T23:45:08Z" finished-at="2016-02-12T23:45:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="test_login(java.lang.String, java.lang.String, boolean)[pri:0, instance:Tests@180bc464]" name="test_login" duration-ms="4347" started-at="2016-02-12T23:45:37Z" data-provider="loginValidation" finished-at="2016-02-12T23:45:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sadfsad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@180bc464]" name="stopBrowser" is-config="true" duration-ms="772" started-at="2016-02-12T23:45:41Z" finished-at="2016-02-12T23:45:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->

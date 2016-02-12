@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-public class PageNoteBook {
+public class PageNoteBook extends BasePage {
 
-    private WebDriver driver;
+
 
     public PageNoteBook(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     @FindBy(xpath = ".//*[@id='schema-filter']/div[2]/div[1]/a")

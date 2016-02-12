@@ -14,7 +14,7 @@ public class Tests extends BasicOfTest {
     public Object [][] loginValidation(){
         return new Object[][]{
 
-                {"sadfsad","asdf"},
+                {"sadfsad","asdf",false},
         };
     }
 
@@ -29,19 +29,20 @@ public class Tests extends BasicOfTest {
 
     }
 
-  /* @Test(dataProvider = "loginValidation")
-    public void test_login(String login,String password){
+   @Test(dataProvider = "loginValidation")
+    public void test_login(String login,String password,boolean flag){
         pageOnliner.goToLoginPage();
         pageLogin.loginToPageHome(login,password);
+       if(flag)
         Assert.assertEquals(pageHome.getUserLogin(), mainLogin);
-    }*/
+    }
 
 
 
 
 
     @Test
-    public void serch_notebook(){
+    public void searchNotebook(){
         pageOnliner.goToLoginPage();
         pageLogin.loginToPageHome(mainLogin, pass);
         pageHome.goToSearchNoteBook();
@@ -54,7 +55,7 @@ public class Tests extends BasicOfTest {
             e.printStackTrace();
         }
         product.getNoteBook();
-        Assert.assertEquals(product.checkParameterOne(),true);
+        Assert.assertEquals(product.checkParameterOne(),product.checkParameterTwo());
 
     }
 

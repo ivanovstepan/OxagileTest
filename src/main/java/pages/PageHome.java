@@ -28,13 +28,9 @@ public class PageHome extends BasePage {
     public void goToSearchNoteBook(){
         this.notebook.click();
     }
-    public String getUserLogin(){
-        if (loginUser.getText().equals("")){
-            System.out.println("DAAAAAAAAAAAAAAAAAAAAAAAAAA");
-            return "kjadfn";
-        }
 
-        else return loginUser.getText();
+    public String getUserLogin(){
+       return loginUser.getText();
     }
 
 
