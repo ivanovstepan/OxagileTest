@@ -21,6 +21,9 @@ public class Product {
     }
 
 
+    private final static String firstParam = ".//*[@class='product-specs__table']/tbody[2]/tr[5]/td";
+    private final static String secondParam = ".//*[@class='product-specs__table']/tbody[6]/tr[2]/td";
+
     @FindBy(xpath = ".//*[@id='schema-filter']/div[2]/div[2]/div/div[3]/div[3]/ul/li[1]/label/span[1]/span")
     WebElement countOfCores;
 
@@ -29,8 +32,6 @@ public class Product {
 
     @FindBy(xpath = ".//*[@id='schema-products']/div[1]/div/div[1]/div[2]/a")
     WebElement noteBook;
-
-
 
 
 
@@ -45,14 +46,14 @@ public class Product {
 
 
     public boolean checkParameterOne(){
-        List<WebElement> list = driver.findElements(By.xpath(".//*[@class='product-specs__table']/tbody[2]/tr[5]/td"));
+        List<WebElement> list = driver.findElements(By.xpath(firstParam));
         System.out.println(list.get(0).getText());
         System.out.println(list.get(1).getText());
         return list.get(0).getText().equals(param1) && list.get(1).getText().equals(value1);
     }
 
     public boolean checkParameterTwo(){
-        List<WebElement> list = driver.findElements(By.xpath(".//*[@class='product-specs__table']/tbody[6]/tr[2]/td"));
+        List<WebElement> list = driver.findElements(By.xpath(secondParam));
         System.out.println(list.get(0).getText());
         System.out.println(list.get(1).getText());
         return list.get(0).getText().equals(param2) && list.get(1).getText().equals(value2);

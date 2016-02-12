@@ -18,7 +18,7 @@ public class PageTechnology  extends BasePage{
     final String dateOfNews = ".//*[@class='b-inner-pages-footer-1']/span[2]/time";
     final String previousPage = ".//*[@class='previous-page']";
     final String nameAttribute = "datetime";
-    private int countPages = 1;
+    private int countPages = 3;
 
     private Writer writer;
 
@@ -28,42 +28,38 @@ public class PageTechnology  extends BasePage{
         writer = new OutputStreamWriter(new FileOutputStream(new File("out1.txt")),"UTF-8");
     }
 
-    public void getAllNews(){
+    public boolean getAllNews(){
+        boolean flag = true;
         for (int i =0; i <= countPages; i++) {
            List<WebElement> list = driver.findElements(By.xpath(news));
             for (WebElement webElement : list) {
                 String name = webElement.findElement(By.xpath(nameOfNews)).getText();
                 String date = webElement.findElement(By.xpath(dateOfNews)).getAttribute(nameAttribute);
-                writeDateInFile(name,date);
+
                 try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    writeDateInFile(name, date+"sdf");
+                } catch (Exception e) {
+                    flag= false;
                 }
+
             }
-            driver.findElement(By.xpath(previousPage)).click();
+                driver.findElement(By.xpath(previousPage)).click();
+
+            try {
+                writer.flush();
+                writer.close();
+            } catch (Exception e) {
+               flag = false;
+            }
         }
-        try {
-            writer.flush();
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        return true;
     }
 
-    private void writeDateInFile(String name,String data){
+    private void writeDateInFile(String name,String data) throws IOException, ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'+03:00'");
         Date date;
-        try {
-
             date=simpleDateFormat.parse(data);
             writer.append("Name: "+name+"\n");
             writer.append("Date: "+date.toString()+"\n\n");
-
-        } catch (ParseException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

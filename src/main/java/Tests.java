@@ -13,7 +13,7 @@ public class Tests extends BasicOfTest {
     @DataProvider( name = "loginValidation")
     public Object [][] loginValidation(){
         return new Object[][]{
-
+                {mainLogin,pass,true},
                 {"sadfsad","asdf",false},
         };
     }
@@ -39,8 +39,6 @@ public class Tests extends BasicOfTest {
 
 
 
-
-
     @Test
     public void searchNotebook(){
         pageOnliner.goToLoginPage();
@@ -56,17 +54,15 @@ public class Tests extends BasicOfTest {
         }
         product.getNoteBook();
         Assert.assertEquals(product.checkParameterOne(),product.checkParameterTwo());
-
     }
 
 
-
-   /* @Test
+    @Test
     public void test_technology(){
         pageOnliner.goToLoginPage();
-        pageLogin.loginToPageHome(login, pass);
+        pageLogin.loginToPageHome(mainLogin, pass);
         pageHome.goToTechnologyPage();
-        pageTechnology.getAllNews();
-    }*/
+        Assert.assertTrue(pageTechnology.getAllNews());
+    }
 
 }
