@@ -26,7 +26,7 @@ public abstract class BasicOfTest {
     public void startBrowser(String browser){
         if(browser.equalsIgnoreCase("firefox"))
             driver = new FirefoxDriver();
-        else new IllegalArgumentException("Incorrect browser type");
+        else throw new IllegalArgumentException("Incorrect browser type");
         initPages();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(URL);

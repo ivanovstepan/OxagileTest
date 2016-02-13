@@ -10,6 +10,7 @@ public class Tests extends BasicOfTest {
     private final String mainLogin = "1856102";
     private final String pass = "newpas11";
 
+
     @DataProvider( name = "loginValidation")
     public Object [][] loginValidation(){
         return new Object[][]{
@@ -33,8 +34,7 @@ public class Tests extends BasicOfTest {
     public void test_login(String login,String password,boolean flag){
         pageOnliner.goToLoginPage();
         pageLogin.loginToPageHome(login,password);
-       if(flag)
-        Assert.assertEquals(pageHome.getUserLogin(), mainLogin);
+       Assert.assertEquals(pageHome.getUserLogin(), flag);
     }
 
 
@@ -46,7 +46,6 @@ public class Tests extends BasicOfTest {
         pageHome.goToSearchNoteBook();
         pageNoteBook.openAddition();
         product.setParameters();
-
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {
@@ -55,7 +54,6 @@ public class Tests extends BasicOfTest {
         product.getNoteBook();
         Assert.assertEquals(product.checkParameterOne(),product.checkParameterTwo());
     }
-
 
     @Test
     public void test_technology(){

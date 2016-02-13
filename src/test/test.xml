@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-        <suite name="FistTest" parallel="none">
+        <suite name="FirstTest" parallel="none">
 
             <test name="Don't know">
                 <parameter name="browser" value="firefox"/>

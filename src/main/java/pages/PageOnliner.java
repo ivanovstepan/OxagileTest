@@ -9,7 +9,7 @@ public class PageOnliner extends BasePage {
 
 
     @FindBy(xpath = ".//*[@class='auth-bar__item auth-bar__item--text']")
-    WebElement goTologinPage;
+    WebElement goToLoginPage;
 
 
     public PageOnliner( WebDriver driver){
@@ -17,7 +17,7 @@ public class PageOnliner extends BasePage {
     }
 
     public void goToLoginPage (){
-        this.goTologinPage.click();
+        this.goToLoginPage.click();
     }
 
 

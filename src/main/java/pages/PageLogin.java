@@ -6,14 +6,13 @@ import org.openqa.selenium.support.FindBy;
 
 
 public class PageLogin extends BasePage {
-    private WebDriver driver;
-    @FindBy(xpath = ".//*[@class='auth-box__part is-active'][1]/div[1]/input")
+    @FindBy(xpath = "(.//*[@class='auth-box__input'])[1]")
     WebElement login;
 
-    @FindBy(xpath = ".//*[@class='auth-box__part is-active'][1]/div[2]/input")
+    @FindBy(xpath = "(.//*[@class='auth-box__input'])[2]")
     WebElement password;
 
-    @FindBy(xpath = ".//*[@class='auth-box__auth-submit auth__btn auth__btn--green']")
+    @FindBy(xpath = ".//*[@class='auth-box__line auth-box__line--final']/button")
     WebElement enter;
 
 

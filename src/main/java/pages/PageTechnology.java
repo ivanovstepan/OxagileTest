@@ -37,11 +37,10 @@ public class PageTechnology  extends BasePage{
                 String date = webElement.findElement(By.xpath(dateOfNews)).getAttribute(nameAttribute);
 
                 try {
-                    writeDateInFile(name, date+"sdf");
+                    writeDateInFile(name, date);
                 } catch (Exception e) {
                     flag= false;
                 }
-
             }
                 driver.findElement(By.xpath(previousPage)).click();
 
@@ -52,14 +51,14 @@ public class PageTechnology  extends BasePage{
                flag = false;
             }
         }
-        return true;
+        return flag;
     }
 
     private void writeDateInFile(String name,String data) throws IOException, ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'+03:00'");
         Date date;
             date=simpleDateFormat.parse(data);
-            writer.append("Name: "+name+"\n");
-            writer.append("Date: "+date.toString()+"\n\n");
+            writer.append("Name: ").append(name).append("\n");
+            writer.append("Date: ").append(date.toString()).append("\n\n");
     }
 }
