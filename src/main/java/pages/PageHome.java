@@ -8,14 +8,16 @@ import org.openqa.selenium.support.FindBy;
 public class PageHome extends BasePage {
 
 
-    public final String LOGIN_USER = ".//*[@class='user-name']/a";
+
+
+    private final static String LOGIN_USER = ".//*[@class='user-name']/a";
     @FindBy(xpath = LOGIN_USER)
     WebElement loginUser;
-
-    @FindBy(xpath = ".//*[@href='http://tech.onliner.by/']")
+    private final static String TECHNOLOGY_PAGE =".//*[@href='http://tech.onliner.by/']";
+    @FindBy(xpath = TECHNOLOGY_PAGE)
     WebElement technologyPage;
-
-    @FindBy(xpath = "(.//*[@href='http://catalog.onliner.by/notebook'])[1]")
+    private final static String NOTEBOOK ="(.//*[@href='http://catalog.onliner.by/notebook'])[1]";
+    @FindBy(xpath = NOTEBOOK)
     WebElement notebook;
 
     public PageHome (WebDriver driver){

@@ -13,7 +13,8 @@ public class PageNoteBook extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = ".//*[@id='schema-filter']/div[2]/div[1]/a")
+    private final static String PARAMETERS =".//*[@id='schema-filter']/div[2]/div[1]/a";
+    @FindBy(xpath = PARAMETERS)
     WebElement additionalParameters;
 
 

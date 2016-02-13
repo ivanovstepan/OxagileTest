@@ -29,32 +29,27 @@ public class Tests extends BasicOfTest {
         product = PageFactory.initElements(driver,Product.class);
 
     }
-
+/*
    @Test(dataProvider = "loginValidation")
     public void test_login(String login,String password,boolean flag){
         pageOnliner.goToLoginPage();
         pageLogin.loginToPageHome(login,password);
-       Assert.assertEquals(pageHome.getUserLogin(), flag);
+
+       Assert.assertEquals(pageHome.getUserLogin().equals(mainLogin), flag);
     }
-
-
+*/
 
     @Test
-    public void searchNotebook(){
+    public void searchNotebook() throws InterruptedException {
         pageOnliner.goToLoginPage();
         pageLogin.loginToPageHome(mainLogin, pass);
         pageHome.goToSearchNoteBook();
         pageNoteBook.openAddition();
         product.setParameters();
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         product.getNoteBook();
-        Assert.assertEquals(product.checkParameterOne(),product.checkParameterTwo());
+        Assert.assertEquals(product.checkParameterOne(), product.checkParameterTwo());
     }
-
+/*
     @Test
     public void test_technology(){
         pageOnliner.goToLoginPage();
@@ -62,5 +57,5 @@ public class Tests extends BasicOfTest {
         pageHome.goToTechnologyPage();
         Assert.assertTrue(pageTechnology.getAllNews());
     }
-
+*/
 }

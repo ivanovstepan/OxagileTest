@@ -4,6 +4,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import java.io.*;
 import java.text.ParseException;
@@ -13,10 +14,17 @@ import java.util.List;
 
 public class PageTechnology  extends BasePage{
 
-    final String news =".//*[@class='b-posts-1 b-content-posts-1']/article";
+    private final static String NEWS =".//*[@class='b-posts-1 b-content-posts-1']/article";
+    @FindBy(xpath = NEWS)
+    List<WebElement> news;
+
     final String nameOfNews = ".//*[@class='b-posts-1-item__title'][1]/a/span[1]";
     final String dateOfNews = ".//*[@class='b-inner-pages-footer-1']/span[2]/time";
-    final String previousPage = ".//*[@class='previous-page']";
+    private final static String PREVIOUS_PAGE = ".//*[@class='previous-page']";
+    @FindBy(xpath = PREVIOUS_PAGE)
+    WebElement page;
+
+
     final String nameAttribute = "datetime";
     private int countPages = 3;
 
@@ -30,26 +38,25 @@ public class PageTechnology  extends BasePage{
 
     public boolean getAllNews(){
         boolean flag = true;
-        for (int i =0; i <= countPages; i++) {
-           List<WebElement> list = driver.findElements(By.xpath(news));
-            for (WebElement webElement : list) {
+        for (int i =0; i < countPages; i++) {
+
+            for (WebElement webElement : news) {
                 String name = webElement.findElement(By.xpath(nameOfNews)).getText();
                 String date = webElement.findElement(By.xpath(dateOfNews)).getAttribute(nameAttribute);
-
                 try {
                     writeDateInFile(name, date);
                 } catch (Exception e) {
                     flag= false;
                 }
             }
-                driver.findElement(By.xpath(previousPage)).click();
+                page.click();
 
-            try {
-                writer.flush();
-                writer.close();
-            } catch (Exception e) {
-               flag = false;
-            }
+        }
+        try {
+            writer.flush();
+            writer.close();
+        } catch (Exception e) {
+            flag = false;
         }
         return flag;
     }

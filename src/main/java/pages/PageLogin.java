@@ -6,13 +6,16 @@ import org.openqa.selenium.support.FindBy;
 
 
 public class PageLogin extends BasePage {
-    @FindBy(xpath = "(.//*[@class='auth-box__input'])[1]")
-    WebElement login;
 
-    @FindBy(xpath = "(.//*[@class='auth-box__input'])[2]")
+    private final static String LOGIN ="(.//*[@class='auth-box__input'])[1]";
+    @FindBy(xpath = LOGIN)
+    WebElement login;
+    private final static String PASS = "(.//*[@class='auth-box__input'])[2]";
+    @FindBy(xpath = PASS)
     WebElement password;
 
-    @FindBy(xpath = ".//*[@class='auth-box__line auth-box__line--final']/button")
+    private final static String ENTER =".//*[@class='auth-box__line auth-box__line--final']/button";
+    @FindBy(xpath = ENTER)
     WebElement enter;
 
 

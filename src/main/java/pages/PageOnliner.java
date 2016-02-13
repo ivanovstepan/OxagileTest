@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class PageOnliner extends BasePage {
 
-
-    @FindBy(xpath = ".//*[@class='auth-bar__item auth-bar__item--text']")
+    private final static String LOGIN_PAGE =".//*[@class='auth-bar__item auth-bar__item--text']";
+    @FindBy(xpath = LOGIN_PAGE)
     WebElement goToLoginPage;
 
 

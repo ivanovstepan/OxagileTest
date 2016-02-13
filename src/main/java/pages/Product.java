@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Product {
     private WebDriver driver;
@@ -24,13 +25,16 @@ public class Product {
     private final static String firstParam = ".//*[@class='product-specs__table']/tbody[2]/tr[5]/td";
     private final static String secondParam = ".//*[@class='product-specs__table']/tbody[6]/tr[2]/td";
 
-    @FindBy(xpath = ".//*[@id='schema-filter']/div[2]/div[2]/div/div[3]/div[3]/ul/li[1]/label/span[1]/span")
+    private final static String COUNT_CORES =".//*[@id='schema-filter']/div[2]/div[2]/div/div[3]/div[3]/ul/li[1]/label/span[1]/span";
+    @FindBy(xpath = COUNT_CORES)
     WebElement countOfCores;
 
-    @FindBy(xpath = ".//*[@id='schema-filter']/div[2]/div[2]/div/div[5]/div[3]/ul/li[1]/label/span[1]/span")
+    private final static String PATH_RAM = ".//*[@id='schema-filter']/div[2]/div[2]/div/div[5]/div[3]/ul/li[1]/label/span[1]/span";
+    @FindBy(xpath = PATH_RAM)
     WebElement RAM;
 
-    @FindBy(xpath = ".//*[@id='schema-products']/div[1]/div/div[1]/div[2]/a")
+    private final static String NOTEBOOK = ".//*[@id='schema-products']/div[1]/div/div[1]/div[2]/a";
+    @FindBy(xpath = NOTEBOOK)
     WebElement noteBook;
 
 
@@ -41,6 +45,7 @@ public class Product {
     }
 
     public void getNoteBook(){
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         noteBook.click();
     }
 
