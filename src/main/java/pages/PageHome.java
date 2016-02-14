@@ -25,14 +25,15 @@ public class PageHome extends BasePage {
 
     }
     public void goToTechnologyPage(){
+        log.info("Go to TechnologyPage");
         this.technologyPage.click();
     }
     public void goToSearchNoteBook(){
+        log.info("Go to NoteBookPage");
         this.notebook.click();
     }
 
     public String getUserLogin(){
-        System.out.print(loginUser.getText());
        return loginUser.getText();
     }
 

@@ -24,7 +24,6 @@ public class PageTechnology  extends BasePage{
     @FindBy(xpath = PREVIOUS_PAGE)
     WebElement page;
 
-
     final String nameAttribute = "datetime";
     private int countPages = 3;
 
@@ -33,26 +32,28 @@ public class PageTechnology  extends BasePage{
 
     public PageTechnology(WebDriver driver) throws IOException {
         super(driver);
+
         writer = new OutputStreamWriter(new FileOutputStream(new File("out1.txt")),"UTF-8");
     }
 
     public boolean getAllNews(){
         boolean flag = true;
         for (int i =0; i < countPages; i++) {
-
+            log.info("Write information  from one page in file");
             for (WebElement webElement : news) {
                 String name = webElement.findElement(By.xpath(nameOfNews)).getText();
                 String date = webElement.findElement(By.xpath(dateOfNews)).getAttribute(nameAttribute);
                 try {
                     writeDateInFile(name, date);
                 } catch (Exception e) {
+                    log.info("catch exception");
                     flag= false;
                 }
             }
                 page.click();
-
         }
         try {
+            log.info("catch exception");
             writer.flush();
             writer.close();
         } catch (Exception e) {
@@ -62,10 +63,12 @@ public class PageTechnology  extends BasePage{
     }
 
     private void writeDateInFile(String name,String data) throws IOException, ParseException {
+
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'+03:00'");
         Date date;
             date=simpleDateFormat.parse(data);
             writer.append("Name: ").append(name).append("\n");
             writer.append("Date: ").append(date.toString()).append("\n\n");
+
     }
 }

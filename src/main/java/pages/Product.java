@@ -9,8 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class Product {
-    private WebDriver driver;
+public class Product extends BasePage {
     private final String param1="Количество ядер";
     private final String param2="Тип оперативной памяти";
     private final String value1="2";
@@ -18,7 +17,7 @@ public class Product {
 
 
     public Product(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
 
@@ -40,6 +39,7 @@ public class Product {
 
 
     public void setParameters() {
+        log.info("Set parameters");
         this.countOfCores.click();
         this.RAM.click();
     }
@@ -51,6 +51,7 @@ public class Product {
 
 
     public boolean checkParameterOne(){
+
         List<WebElement> list = driver.findElements(By.xpath(firstParam));
         System.out.println(list.get(0).getText());
         System.out.println(list.get(1).getText());

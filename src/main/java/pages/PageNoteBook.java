@@ -19,6 +19,7 @@ public class PageNoteBook extends BasePage {
 
 
     public void openAddition(){
+        log.info("Open additional parameters");
         this.additionalParameters.click();
     }
 

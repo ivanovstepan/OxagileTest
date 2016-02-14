@@ -1,5 +1,6 @@
 package pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class BasePage {
 
     protected WebDriver driver;
-
+    protected Logger log = Logger.getLogger(this.getClass().getName());
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }

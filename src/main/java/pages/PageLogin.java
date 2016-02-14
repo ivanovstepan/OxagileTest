@@ -24,21 +24,23 @@ public class PageLogin extends BasePage {
     }
 
     private void setPass(String password){
+        log.info("Enter password");
         this.password.sendKeys(password);
     }
 
     private void setLogin(String login){
+        log.info("Enter login");
         this.login.sendKeys(login);
     }
 
     private void clickLogin(){
+        log.info("Enter information");
         this.enter.click();
     }
 
     public void loginToPageHome(String login, String password){
         this.setLogin(login);
         this.setPass(password);
-
         this.clickLogin();
     }
 

@@ -17,6 +17,7 @@ public class PageOnliner extends BasePage {
     }
 
     public void goToLoginPage (){
+        log.info("Go to loginPage");
         this.goToLoginPage.click();
     }
 

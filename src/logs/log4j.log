@@ -1,0 +1,104 @@
+2016-02-14 14:33:43 INFO  Tests:36 - Login test
+2016-02-14 14:33:43 INFO  PageOnliner:20 - Go to loginPage
+2016-02-14 14:34:01 INFO  Tests:39 - Set login and password
+2016-02-14 14:34:01 INFO  PageLogin:32 - Enter login
+2016-02-14 14:34:04 INFO  PageLogin:27 - Enter password
+2016-02-14 14:34:05 INFO  PageLogin:37 - Enter information
+2016-02-14 14:34:06 INFO  Tests:41 - Check the result
+2016-02-14 14:34:41 INFO  Tests:36 - Login test
+2016-02-14 14:34:41 INFO  PageOnliner:20 - Go to loginPage
+2016-02-14 14:34:42 INFO  Tests:39 - Set login and password
+2016-02-14 14:34:42 INFO  PageLogin:32 - Enter login
+2016-02-14 14:34:44 INFO  PageLogin:27 - Enter password
+2016-02-14 14:34:45 INFO  PageLogin:37 - Enter information
+2016-02-14 14:34:45 INFO  Tests:41 - Check the result
+2016-02-14 14:39:16 INFO  Tests:49 - Search NoteBook Test start
+2016-02-14 14:39:16 INFO  PageOnliner:20 - Go to loginPage
+2016-02-14 14:39:35 INFO  PageLogin:32 - Enter login
+2016-02-14 14:39:37 INFO  PageLogin:27 - Enter password
+2016-02-14 14:39:38 INFO  PageLogin:37 - Enter information
+2016-02-14 14:39:38 INFO  PageHome:32 - Go to NoteBookPage
+2016-02-14 14:39:41 INFO  PageNoteBook:22 - Open additional parameters
+2016-02-14 14:39:53 INFO  Product:42 - Set parameters
+2016-02-14 14:40:13 INFO  Tests:57 - End of Search NoteBook test
+2016-02-14 14:40:25 INFO  Tests:36 - Login test start
+2016-02-14 14:40:25 INFO  PageOnliner:20 - Go to loginPage
+2016-02-14 14:40:45 INFO  Tests:39 - Set login and password
+2016-02-14 14:40:45 INFO  PageLogin:32 - Enter login
+2016-02-14 14:40:49 INFO  PageLogin:27 - Enter password
+2016-02-14 14:40:50 INFO  PageLogin:37 - Enter information
+2016-02-14 14:40:50 INFO  Tests:41 - Check the result
+2016-02-14 14:40:51 INFO  Tests:43 - End of Login test
+2016-02-14 14:41:23 INFO  Tests:36 - Login test start
+2016-02-14 14:41:23 INFO  PageOnliner:20 - Go to loginPage
+2016-02-14 14:41:23 INFO  Tests:39 - Set login and password
+2016-02-14 14:41:23 INFO  PageLogin:32 - Enter login
+2016-02-14 14:41:26 INFO  PageLogin:27 - Enter password
+2016-02-14 14:41:28 INFO  PageLogin:37 - Enter information
+2016-02-14 14:41:28 INFO  Tests:41 - Check the result
+2016-02-14 14:41:28 INFO  Tests:43 - End of Login test
+2016-02-14 14:41:40 INFO  Tests:62 - Search all news Test start
+2016-02-14 14:41:40 INFO  PageOnliner:20 - Go to loginPage
+2016-02-14 14:41:59 INFO  PageLogin:32 - Enter login
+2016-02-14 14:42:00 INFO  PageLogin:27 - Enter password
+2016-02-14 14:42:02 INFO  PageLogin:37 - Enter information
+2016-02-14 14:42:02 INFO  PageHome:28 - Go to TechnologyPage
+2016-02-14 14:42:20 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:20 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:20 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:21 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:21 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:21 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:21 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:21 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:21 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:22 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:22 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:22 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:22 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:22 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:22 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:22 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:22 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:22 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:23 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:35 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:35 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:35 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:35 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:35 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:35 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:36 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:36 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:36 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:36 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:36 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:36 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:36 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:37 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:37 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:37 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:37 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:37 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:37 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:52 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:52 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:53 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:53 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:53 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:54 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:54 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:54 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:55 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:55 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:55 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:55 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:55 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:55 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:55 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:56 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:56 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:56 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:56 INFO  PageTechnology:66 - Write information in file
+2016-02-14 14:42:56 INFO  PageTechnology:56 - catch exception
+2016-02-14 14:42:56 INFO  Tests:67 - End of Searching news test
