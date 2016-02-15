@@ -45,6 +45,7 @@ public class Product extends BasePage {
     }
 
     public void getNoteBook(){
+        log.info("Choose notebook");
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         noteBook.click();
     }
@@ -53,15 +54,11 @@ public class Product extends BasePage {
     public boolean checkParameterOne(){
 
         List<WebElement> list = driver.findElements(By.xpath(firstParam));
-        System.out.println(list.get(0).getText());
-        System.out.println(list.get(1).getText());
         return list.get(0).getText().equals(param1) && list.get(1).getText().equals(value1);
     }
 
     public boolean checkParameterTwo(){
         List<WebElement> list = driver.findElements(By.xpath(secondParam));
-        System.out.println(list.get(0).getText());
-        System.out.println(list.get(1).getText());
         return list.get(0).getText().equals(param2) && list.get(1).getText().equals(value2);
     }
 

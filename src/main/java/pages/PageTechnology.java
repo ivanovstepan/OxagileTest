@@ -53,10 +53,11 @@ public class PageTechnology  extends BasePage{
                 page.click();
         }
         try {
-            log.info("catch exception");
+
             writer.flush();
             writer.close();
         } catch (Exception e) {
+            log.info("catch exception");
             flag = false;
         }
         return flag;

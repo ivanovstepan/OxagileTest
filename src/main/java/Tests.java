@@ -5,8 +5,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.*;
 
-
-
 public class Tests extends BasicOfTest {
 
     private final String mainLogin = "1856102";
@@ -16,7 +14,7 @@ public class Tests extends BasicOfTest {
     public Object [][] loginValidation(){
         return new Object[][]{
                 {mainLogin,pass,true},
-                {"sadfsad","asdf",false}
+                {"","",false}
         };
     }
 
@@ -39,7 +37,7 @@ public class Tests extends BasicOfTest {
         log.info("Set login and password");
         pageLogin.loginToPageHome(login,password);
         log.info("Check the result");
-        Assert.assertEquals(pageHome.getUserLogin().equals(mainLogin), flag);
+        Assert.assertEquals(pageHome.getUserLogin().equals(mainLogin), flag,"Login");
         log.info("End of Login test");
     }
 
@@ -53,7 +51,7 @@ public class Tests extends BasicOfTest {
         pageNoteBook.openAddition();
         product.setParameters();
         product.getNoteBook();
-        Assert.assertEquals(product.checkParameterOne(), product.checkParameterTwo());
+        Assert.assertEquals(product.checkParameterOne(), product.checkParameterTwo(),"NoteBook result");
         log.info("End of Search NoteBook test");
     }
 
@@ -63,7 +61,7 @@ public class Tests extends BasicOfTest {
         pageOnliner.goToLoginPage();
         pageLogin.loginToPageHome(mainLogin, pass);
         pageHome.goToTechnologyPage();
-        Assert.assertTrue(pageTechnology.getAllNews());
+        Assert.assertTrue(pageTechnology.getAllNews(),"Technology News");
         log.info("End of Searching news test");
     }
 

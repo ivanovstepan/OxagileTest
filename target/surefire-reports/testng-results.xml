@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="FirstTest" duration-ms="233817" started-at="2016-02-14T12:39:03Z" finished-at="2016-02-14T12:42:57Z">
+  <suite name="FirstSuite" duration-ms="202331" started-at="2016-02-15T00:00:46Z" finished-at="2016-02-15T00:04:08Z">
     <groups>
     </groups>
-    <test name="Don&#039;t know" duration-ms="233817" started-at="2016-02-14T12:39:03Z" finished-at="2016-02-14T12:42:57Z">
+    <test name="OxaTest" duration-ms="202331" started-at="2016-02-15T00:00:46Z" finished-at="2016-02-15T00:04:08Z">
       <class name="Tests">
-        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@12843fce]" name="startBrowser" is-config="true" duration-ms="12794" started-at="2016-02-14T14:39:03Z" finished-at="2016-02-14T14:39:16Z">
+        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@2cb4c3ab]" name="startBrowser" is-config="true" duration-ms="30213" started-at="2016-02-15T02:00:46Z" finished-at="2016-02-15T02:01:16Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="searchNotebook()[pri:0, instance:Tests@12843fce]" name="searchNotebook" duration-ms="56544" started-at="2016-02-14T14:39:16Z" finished-at="2016-02-14T14:40:13Z">
+        <test-method status="PASS" signature="searchNotebook()[pri:0, instance:Tests@2cb4c3ab]" name="searchNotebook" duration-ms="29103" started-at="2016-02-15T02:01:16Z" finished-at="2016-02-15T02:01:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchNotebook -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@12843fce]" name="stopBrowser" is-config="true" duration-ms="1825" started-at="2016-02-14T14:40:13Z" finished-at="2016-02-14T14:40:15Z">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@2cb4c3ab]" name="stopBrowser" is-config="true" duration-ms="1407" started-at="2016-02-15T02:01:45Z" finished-at="2016-02-15T02:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@12843fce]" name="startBrowser" is-config="true" duration-ms="10714" started-at="2016-02-14T14:40:15Z" finished-at="2016-02-14T14:40:25Z">
+        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@2cb4c3ab]" name="startBrowser" is-config="true" duration-ms="28353" started-at="2016-02-15T02:01:47Z" finished-at="2016-02-15T02:02:15Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="test_login(java.lang.String, java.lang.String, boolean)[pri:0, instance:Tests@12843fce]" name="test_login" duration-ms="25877" started-at="2016-02-14T14:40:25Z" data-provider="loginValidation" finished-at="2016-02-14T14:40:51Z">
+        <test-method status="PASS" signature="test_login(java.lang.String, java.lang.String, boolean)[pri:0, instance:Tests@2cb4c3ab]" name="test_login" duration-ms="5685" started-at="2016-02-15T02:02:15Z" data-provider="loginValidation" finished-at="2016-02-15T02:02:21Z">
           <params>
             <param index="0">
               <value>
@@ -58,11 +58,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_login -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@12843fce]" name="stopBrowser" is-config="true" duration-ms="782" started-at="2016-02-14T14:40:51Z" finished-at="2016-02-14T14:40:52Z">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@2cb4c3ab]" name="stopBrowser" is-config="true" duration-ms="968" started-at="2016-02-15T02:02:21Z" finished-at="2016-02-15T02:02:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@12843fce]" name="startBrowser" is-config="true" duration-ms="30826" started-at="2016-02-14T14:40:52Z" finished-at="2016-02-14T14:41:23Z">
+        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@2cb4c3ab]" name="startBrowser" is-config="true" duration-ms="27717" started-at="2016-02-15T02:02:22Z" finished-at="2016-02-15T02:02:50Z">
           <params>
             <param index="0">
               <value>
@@ -73,16 +73,16 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="test_login(java.lang.String, java.lang.String, boolean)[pri:0, instance:Tests@12843fce]" name="test_login" duration-ms="5265" started-at="2016-02-14T14:41:23Z" data-provider="loginValidation" finished-at="2016-02-14T14:41:28Z">
+        <test-method status="PASS" signature="test_login(java.lang.String, java.lang.String, boolean)[pri:0, instance:Tests@2cb4c3ab]" name="test_login" duration-ms="3502" started-at="2016-02-15T02:02:50Z" data-provider="loginValidation" finished-at="2016-02-15T02:02:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[sadfsad]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[asdf]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="2">
@@ -94,11 +94,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_login -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@12843fce]" name="stopBrowser" is-config="true" duration-ms="591" started-at="2016-02-14T14:41:28Z" finished-at="2016-02-14T14:41:29Z">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@2cb4c3ab]" name="stopBrowser" is-config="true" duration-ms="589" started-at="2016-02-15T02:02:53Z" finished-at="2016-02-15T02:02:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@12843fce]" name="startBrowser" is-config="true" duration-ms="11441" started-at="2016-02-14T14:41:29Z" finished-at="2016-02-14T14:41:40Z">
+        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:Tests@2cb4c3ab]" name="startBrowser" is-config="true" duration-ms="8585" started-at="2016-02-15T02:02:54Z" finished-at="2016-02-15T02:03:02Z">
           <params>
             <param index="0">
               <value>
@@ -109,15 +109,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="test_technology()[pri:0, instance:Tests@12843fce]" name="test_technology" duration-ms="76198" started-at="2016-02-14T14:41:40Z" finished-at="2016-02-14T14:42:56Z">
+        <test-method status="PASS" signature="test_technology()[pri:0, instance:Tests@2cb4c3ab]" name="test_technology" duration-ms="64996" started-at="2016-02-15T02:03:02Z" finished-at="2016-02-15T02:04:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_technology -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@12843fce]" name="stopBrowser" is-config="true" duration-ms="927" started-at="2016-02-14T14:42:56Z" finished-at="2016-02-14T14:42:57Z">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:Tests@2cb4c3ab]" name="stopBrowser" is-config="true" duration-ms="1178" started-at="2016-02-15T02:04:07Z" finished-at="2016-02-15T02:04:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- Tests -->
-    </test> <!-- Don't know -->
-  </suite> <!-- FirstTest -->
+    </test> <!-- OxaTest -->
+  </suite> <!-- FirstSuite -->
 </testng-results>

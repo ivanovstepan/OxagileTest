@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-        <suite name="FirstTest" parallel="none">
+        <suite name="FirstSuite" parallel="none">
 
-            <test name="Don't know">
+            <test name="OxaTest">
                 <parameter name="browser" value="firefox"/>
                 <classes>
                     <class name="Tests"/>
