@@ -1,36 +1,36 @@
-2016-02-15 02:01:16 INFO  Tests:47 - Search NoteBook Test start
-2016-02-15 02:01:16 INFO  PageOnliner:20 - Go to loginPage
-2016-02-15 02:01:17 INFO  PageLogin:32 - Enter login
-2016-02-15 02:01:19 INFO  PageLogin:27 - Enter password
-2016-02-15 02:01:21 INFO  PageLogin:37 - Enter information
-2016-02-15 02:01:22 INFO  PageHome:32 - Go to NoteBookPage
-2016-02-15 02:01:23 INFO  PageNoteBook:22 - Open additional parameters
-2016-02-15 02:01:33 INFO  Product:42 - Set parameters
-2016-02-15 02:01:35 INFO  Product:48 - Choose notebook
-2016-02-15 02:01:45 INFO  Tests:55 - End of Search NoteBook test
-2016-02-15 02:02:15 INFO  Tests:34 - Login test start
-2016-02-15 02:02:15 INFO  PageOnliner:20 - Go to loginPage
-2016-02-15 02:02:17 INFO  Tests:37 - Set login and password
-2016-02-15 02:02:17 INFO  PageLogin:32 - Enter login
-2016-02-15 02:02:17 INFO  PageLogin:27 - Enter password
-2016-02-15 02:02:19 INFO  PageLogin:37 - Enter information
-2016-02-15 02:02:19 INFO  Tests:39 - Check the result
-2016-02-15 02:02:21 INFO  Tests:41 - End of Login test
-2016-02-15 02:02:50 INFO  Tests:34 - Login test start
-2016-02-15 02:02:50 INFO  PageOnliner:20 - Go to loginPage
-2016-02-15 02:02:50 INFO  Tests:37 - Set login and password
-2016-02-15 02:02:50 INFO  PageLogin:32 - Enter login
-2016-02-15 02:02:52 INFO  PageLogin:27 - Enter password
-2016-02-15 02:02:53 INFO  PageLogin:37 - Enter information
-2016-02-15 02:02:53 INFO  Tests:39 - Check the result
-2016-02-15 02:02:53 INFO  Tests:41 - End of Login test
-2016-02-15 02:03:02 INFO  Tests:60 - Search all news Test start
-2016-02-15 02:03:02 INFO  PageOnliner:20 - Go to loginPage
-2016-02-15 02:03:19 INFO  PageLogin:32 - Enter login
-2016-02-15 02:03:20 INFO  PageLogin:27 - Enter password
-2016-02-15 02:03:21 INFO  PageLogin:37 - Enter information
-2016-02-15 02:03:21 INFO  PageHome:28 - Go to TechnologyPage
-2016-02-15 02:03:22 INFO  PageTechnology:42 - Write information  from one page in file
-2016-02-15 02:03:37 INFO  PageTechnology:42 - Write information  from one page in file
-2016-02-15 02:03:52 INFO  PageTechnology:42 - Write information  from one page in file
-2016-02-15 02:04:07 INFO  Tests:65 - End of Searching news test
+2016-02-16 18:57:13 INFO  Tests:47 - Search NoteBook Test start
+2016-02-16 18:57:13 INFO  PageOnliner:20 - Go to loginPage
+2016-02-16 18:57:30 INFO  PageLogin:32 - Enter login
+2016-02-16 18:57:31 INFO  PageLogin:27 - Enter password
+2016-02-16 18:57:32 INFO  PageLogin:37 - Enter information
+2016-02-16 18:57:32 INFO  PageHome:32 - Go to NoteBookPage
+2016-02-16 18:57:33 INFO  PageNoteBook:22 - Open additional parameters
+2016-02-16 18:57:43 INFO  Product:42 - Set parameters
+2016-02-16 18:57:46 INFO  Product:48 - Choose notebook
+2016-02-16 18:57:56 INFO  Tests:55 - End of Search NoteBook test
+2016-02-16 18:58:05 INFO  Tests:34 - Login test start
+2016-02-16 18:58:05 INFO  PageOnliner:20 - Go to loginPage
+2016-02-16 18:58:22 INFO  Tests:37 - Set login and password
+2016-02-16 18:58:22 INFO  PageLogin:32 - Enter login
+2016-02-16 18:58:23 INFO  PageLogin:27 - Enter password
+2016-02-16 18:58:24 INFO  PageLogin:37 - Enter information
+2016-02-16 18:58:24 INFO  Tests:39 - Check the result
+2016-02-16 18:58:26 INFO  Tests:41 - End of Login test
+2016-02-16 18:58:54 INFO  Tests:34 - Login test start
+2016-02-16 18:58:54 INFO  PageOnliner:20 - Go to loginPage
+2016-02-16 18:58:55 INFO  Tests:37 - Set login and password
+2016-02-16 18:58:55 INFO  PageLogin:32 - Enter login
+2016-02-16 18:58:56 INFO  PageLogin:27 - Enter password
+2016-02-16 18:58:57 INFO  PageLogin:37 - Enter information
+2016-02-16 18:58:58 INFO  Tests:39 - Check the result
+2016-02-16 18:58:58 INFO  Tests:41 - End of Login test
+2016-02-16 18:59:06 INFO  Tests:60 - Search all news Test start
+2016-02-16 18:59:06 INFO  PageOnliner:20 - Go to loginPage
+2016-02-16 18:59:23 INFO  PageLogin:32 - Enter login
+2016-02-16 18:59:24 INFO  PageLogin:27 - Enter password
+2016-02-16 18:59:24 INFO  PageLogin:37 - Enter information
+2016-02-16 18:59:24 INFO  PageHome:28 - Go to TechnologyPage
+2016-02-16 18:59:26 INFO  PageTechnology:48 - Write information  from one page in file
+2016-02-16 18:59:44 INFO  PageTechnology:48 - Write information  from one page in file
+2016-02-16 19:00:00 INFO  PageTechnology:48 - Write information  from one page in file
+2016-02-16 19:00:17 INFO  Tests:65 - End of Searching news test

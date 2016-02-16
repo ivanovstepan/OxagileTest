@@ -37,7 +37,7 @@ public class Tests extends BasicOfTest {
         log.info("Set login and password");
         pageLogin.loginToPageHome(login,password);
         log.info("Check the result");
-        Assert.assertEquals(pageHome.getUserLogin().equals(mainLogin), flag,"Login");
+        Assert.assertEquals(pageHome.getUserLogin().equals(mainLogin), flag,"Login failed");
         log.info("End of Login test");
     }
 
@@ -51,7 +51,7 @@ public class Tests extends BasicOfTest {
         pageNoteBook.openAddition();
         product.setParameters();
         product.getNoteBook();
-        Assert.assertEquals(product.checkParameterOne(), product.checkParameterTwo(),"NoteBook result");
+        Assert.assertEquals(product.checkParameterOne(), product.checkParameterTwo(),"NoteBook result failed");
         log.info("End of Search NoteBook test");
     }
 
@@ -61,7 +61,7 @@ public class Tests extends BasicOfTest {
         pageOnliner.goToLoginPage();
         pageLogin.loginToPageHome(mainLogin, pass);
         pageHome.goToTechnologyPage();
-        Assert.assertTrue(pageTechnology.getAllNews(),"Technology News");
+        Assert.assertTrue(pageTechnology.getAllNews()," Unparsed Dates: "+pageTechnology.getUnparsedDate());
         log.info("End of Searching news test");
     }
 

@@ -27,12 +27,18 @@ public class PageTechnology  extends BasePage{
     final String nameAttribute = "datetime";
     private int countPages = 3;
 
+    public String getUnparsedDate() {
+        return sb.toString();
+    }
+
+    private StringBuilder sb;
+
     private Writer writer;
 
 
     public PageTechnology(WebDriver driver) throws IOException {
         super(driver);
-
+        sb = new StringBuilder();
         writer = new OutputStreamWriter(new FileOutputStream(new File("out1.txt")),"UTF-8");
     }
 
@@ -46,6 +52,7 @@ public class PageTechnology  extends BasePage{
                 try {
                     writeDateInFile(name, date);
                 } catch (Exception e) {
+                    sb.append(date).append(" unparsed date");
                     log.info("catch exception");
                     flag= false;
                 }

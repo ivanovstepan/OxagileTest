@@ -13,7 +13,7 @@ public class PageNoteBook extends BasePage {
         super(driver);
     }
 
-    private final static String PARAMETERS =".//*[@id='schema-filter']/div[2]/div[1]/a";
+    private final static String PARAMETERS =".//*[@class='schema-filter-additional__trigger']/a";
     @FindBy(xpath = PARAMETERS)
     WebElement additionalParameters;
 
